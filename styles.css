@@ -15,6 +15,7 @@ html {
     height: 100%;
     font-family: 'PPTelegraf-UltraBold', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: uppercase;
+    border: 2px solid blue;
 }
 
 *,
@@ -29,9 +30,10 @@ body {
     line-height: 1.6;
     display: flex;
     flex-direction: column;
-    min-height: 100%;
+    height: inherit;
     background-color: #FFD455;
     text-align: center;
+
 }
 
 img {
@@ -41,34 +43,25 @@ img {
 
   main {
     margin: auto;
-    min-height: inherit;
-    padding-bottom: 10em;
     display: grid;
     grid-template-rows: 1fr 1fr 2fr;
-
   }
 
   h1 {
     font-size: 2.5rem;
-
   }
 
   p {
-   align-self: center;
     font-size: 1.2rem;
-
   } 
 
   footer p {
     font-size: .7rem;
-    margin-bottom: 1em;
   }
 
-
-  
   img{
     width: 5em;
-    margin: auto ;
+    margin: 1em auto ;
     animation: rotation 10s infinite linear;
   }
 
