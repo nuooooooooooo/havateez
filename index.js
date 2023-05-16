@@ -33,4 +33,4 @@ function countdown(endDate) {
         } else return;
     }
 }
-countdown('05/15/2023 10:00:00 PM');
+countdown('05/16/2023 12:00:00 AM');
