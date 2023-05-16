@@ -1,4 +1,6 @@
 const coundownTimer = document.querySelector("#countdown")
+const havateez = document.querySelector("#havateez")
+const title = document.querySelector('h1')
 
 function countdown(endDate) {
     let timer, days, hours, minutes, seconds;
@@ -30,7 +32,15 @@ function countdown(endDate) {
             document.getElementById("hours").innerHTML = ("0" + hours).slice(-2);
             document.getElementById("minutes").innerHTML = ("0" + minutes).slice(-2);
             document.getElementById("seconds").innerHTML = ("0" + seconds).slice(-2);
-        } else return;
+        } else {
+            document.querySelector("#countdown").classList.add('hideElement')
+            document.querySelector("h1").classList.add('hideElement')
+            document.querySelector("#havateez").classList.remove('hideElement')
+        }
     }
 }
 countdown('05/16/2023 10:00:00 PM');
+
+
+
+

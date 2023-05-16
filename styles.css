@@ -43,8 +43,15 @@ img {
   main {
     margin: auto;
     display: grid;
-    grid-template-rows: 1fr 1fr 2fr;
   }
+
+  /* .mainNormal {
+    grid-template-rows: 1fr 1fr 2fr; 
+  }
+
+  .mainChanged {
+    grid-template-rows: 4fr 1fr;
+  } */
 
   h1 {
     font-size: 2.5rem;
@@ -61,11 +68,22 @@ img {
   img{
     width: 5em;
     margin: 1em auto ;
+  }
+
+  #turningImg {
     animation: rotation 10s infinite linear;
   }
 
   #countdown {
     font-variant-numeric: tabular-nums lining-nums;
+  }
+
+  #havateez {
+    width: 100%;
+  }
+
+  .hideElement {
+    display: none;
   }
 
   @keyframes rotation {
